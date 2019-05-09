@@ -16,12 +16,12 @@ public class TxPersonServcieImpl implements TxPersonService {
     private TxPersonMapper txPersonMapper;
     @Override
 
-    @Cacheable(cacheNames = "1")
+
     public List<TxPerson> selectPersons() {
         return txPersonMapper.selectPersons();
     }
     @Override
-    @Cacheable(cacheNames = "text")
+
     public TxPerson getPersonById(int pid) {
         return txPersonMapper.getPersonById(pid);
     }
